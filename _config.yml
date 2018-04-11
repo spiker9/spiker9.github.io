@@ -16,7 +16,7 @@
 title: Go! Spiker9
 email: 
 description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to my Blog! Here you'll discover some tech skills of what I explored and I want to share. I may also post some fun stuff that I experienced in USA.
+  Welcome to my Blog! Here you'll discover some tech skills I explored and want to share. I may also post some fun stuff that I experienced in USA.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "spiker9.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: 
