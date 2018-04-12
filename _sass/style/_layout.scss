@@ -7,11 +7,12 @@
   min-height: $spacing-unit * 3;
   background-image: url('banner1.jpg');
   background-repeat: no-repeat;
+  //background-position-y: 50%;
   // Positioning context for the mobile navigation icon
   position: relative;
 }
 
-.site-title {
+a.site-title {
   @include relative-font-size(1.625);
   font-weight: 800;
   color: $title-color;
@@ -24,6 +25,16 @@
     color: $title-color;
   }
   
+}
+
+.maxim {
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+  margin-right: auto;
+  margin-left: auto;
+  color: white;
+  position: relative;
+
 }
 
 .site-nav {
@@ -39,7 +50,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $title-color;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
