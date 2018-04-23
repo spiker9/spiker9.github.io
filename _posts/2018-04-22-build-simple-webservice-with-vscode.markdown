@@ -9,7 +9,7 @@ categories: Java
 
 First you'll need to install Java (Better to be 1.8 above), Maven and Visual Studio Code and I'm sure you know where to download them.
 After you open it, you'll find the extensions icon on the left side bar which you can search and install all extensions from there. The extensions you'll need for this topic is *Language Support for Java(TM) by Red Hat*, *Maven for Java* and *Spring Inittializr Java Support*.
-![image]({{"/assets/2018-4-22/1.JPG" | absolute_url}})
+![image]({{"/assets/2018-4-22/1.jpg" | absolute_url}})
 
 **2. Create your Spring Boot Project**
 With *Spring Initializr Java Support*, you can create a spring project base on Maven or Gradle that has project structure and configuration files auto generated.
