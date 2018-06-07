@@ -120,3 +120,11 @@ redis-cli -c -p 7000 set "Test$i" "Test US";
 done
 {% endhighlight %}
 > Many OKs
+
+<span style="color:Red;font-weight:Bold">Note:</span>
+If you are trying to connect the redis cluster from remote client, and you used the "Easy Way" to start the cluster, remember to update <span>create-cluster</span> script to add below code into "start" code branch.
+
+{% highlight yml %}
+--protected-mode no --bind *.*.*.*
+{% endhighlight %}
+> After bind is your local IP address.
