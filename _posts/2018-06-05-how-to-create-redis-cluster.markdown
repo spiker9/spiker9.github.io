@@ -7,6 +7,15 @@ categories: redis
 
 ### How To Create Redis Cluster
 
+#### Install Redis
+Run below scripts to install Redis:
+{% highlight yml %}
+wget http://download.redis.io/redis-stable.tar.gz
+tar xvzf redis-stable.tar.gz
+cd redis-stable
+make
+{% endhighlight %}
+
 #### The Easy Way
 1. Go to redis folder and go into folder <span style="color:Brown">/utils/create-cluster/</span>
 2. Run <code>./create-cluster start</code>
@@ -14,6 +23,14 @@ categories: redis
 4. Type in <span style="color:Brown">Yes</span> for the suggest cluster configuration.
 5. When you see <span style="color:Brown">[OK] All 16384 slots covered</span>, it means your cluster created successfully.
 5.  Run <code>./create-cluster stop</code> to stop the cluster
+
+<span style="color:Red;font-weight:Bold">Note:</span>
+If you are trying to connect the redis cluster from remote client, and you used the "Easy Way" to start the cluster, remember to update <span>create-cluster</span> script to add below code into "start" code branch.
+
+{% highlight yml %}
+--protected-mode no --bind *.*.*.*
+{% endhighlight %}
+> After bind is your local IP address.
 
 #### The Hard Way
 > Which will help you understand the detailed operation
@@ -120,11 +137,3 @@ redis-cli -c -p 7000 set "Test$i" "Test US";
 done
 {% endhighlight %}
 > Many OKs
-
-<span style="color:Red;font-weight:Bold">Note:</span>
-If you are trying to connect the redis cluster from remote client, and you used the "Easy Way" to start the cluster, remember to update <span>create-cluster</span> script to add below code into "start" code branch.
-
-{% highlight yml %}
---protected-mode no --bind *.*.*.*
-{% endhighlight %}
-> After bind is your local IP address.
