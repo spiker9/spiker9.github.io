@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>http://localhost:4000/regex/2018/04/14/learn-regex.html</loc>
+<lastmod>2018-04-14T00:20:32-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/java/2018/04/22/build-simple-webservice-with-vscode.html</loc>
+<lastmod>2018-04-22T11:20:32-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/mac/2018/05/09/customize-mac-terminal.html</loc>
+<lastmod>2018-05-09T17:20:32-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/git/2018/06/05/how-to-use-git.html</loc>
+<lastmod>2018-06-05T11:20:32-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/redis/2018/06/05/how-to-create-redis-cluster.html</loc>
+<lastmod>2018-06-05T13:20:32-04:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/about/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/</loc>
+</url>
+</urlset>
