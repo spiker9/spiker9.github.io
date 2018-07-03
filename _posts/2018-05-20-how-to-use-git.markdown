@@ -13,6 +13,7 @@ categories: git
 	<code>Git commit -m ""</code>
 	
     <code>Git push --set-upstream <up-stream branch> <new branch name></code>
+
 2. **Clone specific branch from remote repository**
 	
     <code>git clone -b my-branch repository_url</code>
@@ -24,9 +25,21 @@ categories: git
 3. **Restore a deleted local repository file**
 
     - Get revision number
-    
+                     
     <code>git rev-list -n 1 HEAD -- <file_path></code>
     
     - Restore to the above revision number
 
     <code>git checkout <revision number> -- <file_path></code>
+
+4. **Delete a local branch**
+
+<code>git branch -d branch_name</code>
+
+5. **Force pull remote and overwrite local**
+
+<code>git fetch --all</code>
+<code>git reset --hard origin/branch_name</code>
+
+6. **discard local change by overwrite with local repository**
+<code>git checkout -- <file></code>
