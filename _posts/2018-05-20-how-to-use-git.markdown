@@ -36,10 +36,16 @@ categories: git
 
 <code>git branch -d branch_name</code>
 
-5. **Force pull remote and overwrite local**
+5. **Force pull remote and overwrite local branch**
 
 <code>git fetch --all</code>
 <code>git reset --hard origin/branch_name</code>
 
+
 6. **discard local change by overwrite with local repository**
 <code>git checkout -- <file></code>
+
+7. **Force pull remote and overwrite local file**
+
+<code>git fetch</code>
+<code>git checkout origin/master <filepath></code>
